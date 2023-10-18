@@ -19,7 +19,38 @@ Design of webserver workflow
 
 ## Step 3:
 
-Implementation using Python code
+from http.server import HTTPServer, BaseHTTPRequestHandler
+content = """
+
+<html>
+<head>
+<title>details</title>
+ </head>
+<body>
+<h1 style="border:20px solid red","background-color:blue";>Details of myself</h1>
+<hr>
+<h4>NAME:Abdullah.R<h4>
+<h4>AGE:19</h4>
+<h4>NAME OF UNIVERSITY:Saveetha</h4>
+<h4>DEPARTMENT:AIDS</h4>
+<h4>REG_NO:23013613</h4>
+<hr>
+<p style=color:red;>the details are correct and are entered by me</p>
+
+</body>
+</html>
+"""
+
+class HelloHandler (BaseHTTPRequestHandler):
+     def do_GET (self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html; charset=utf-8')
+        self.end headers ()
+        self.wfile.write(content.encode())
+        server_address = ('', 80)
+httpd = HTTPServer (server_address, HelloHandler)
+httpd.serve_forever()
+
 
 ## Step 4:
 
@@ -29,8 +60,45 @@ Serving the HTML pages.
 
 Testing the webserver
 # PROGRAM:
-Type your code here
+```python
+from http.server import HTTPServer, BaseHTTPRequestHandler
+content = """
+
+<html>
+<head>
+<title>details</title>
+</head>
+<body>
+<h1 style="border:20px solid red","background-color:blue";>Details of myself</h1>
+<hr>
+<h4>NAME:Abdullah.R<h4>
+<h4>AGE:19</h4>
+<h4>NAME OF UNIVERSITY:Saveetha</h4>
+<h4>DEPARTMENT:AIDS</h4>
+<h4>REG_NO:23013613</h4>
+<hr>
+<p style=color:red;>the details are correct and are entered by me</p>
+
+</body>
+</html>
+"""
+
+class HelloHandler (BaseHTTPRequestHandler):
+     def do_GET (self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html; charset=utf-8')
+        self.end headers ()
+        self.wfile.write(content.encode())
+        
+server_address = ('', 80)
+httpd = HTTPServer (server_address, HelloHandler)
+httpd.serve_forever()
+```
+
 # OUTPUT:
+![Output](images/webserver1.png)
+
+
 
 # RESULT:
 
