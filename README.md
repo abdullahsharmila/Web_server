@@ -1,7 +1,12 @@
 # Developing a Simple Webserver
+<<<<<<< HEAD
 Name:Abdullah.R
 Ref no:23013613
 
+=======
+Name: Karthi Govindharaju
+ID: ISAI005
+>>>>>>> 6f3272c27c06bbb1138b69891385a44fd121bf34
 
 # AIM:
 
