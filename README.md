@@ -63,7 +63,8 @@ httpd.serve_forever()
 
 
 # OUTPUT:
-![Alt text](webserver.png)
+
+![webserver png](https://github.com/abdullahsharmila/Web_server/assets/145742459/e9648e92-c9de-43c7-a7c4-e6baf6438f9c)
 
 
 # RESULT:
