@@ -21,6 +21,7 @@ Design of webserver workflow
 
 Implementation using python code
 
+
 ## Step 4:
 
 Serving the HTML pages.
@@ -29,20 +30,22 @@ Serving the HTML pages.
 
 Testing the webserver
 # PROGRAM:
-
 ```
 from http.server import HTTPServer, 
 BaseHTTPRequestHandler
 content = """
-
+<!doctype html>
 <html>
 <head>
+<title>Top Five </title>
 </head>
 <body>
-<h1>Welcome</h1>
+<h1>Top Five Application Development Frameworks</h1>
+<h3>1.Django</h3>
+<h3>2.MEAN Stock</h3>
+<h3>3.React</h3>
 </body>
 </html>
-"""
 
 class HelloHandler (BaseHTTPRequestHandler):
      def do_GET (self):
@@ -56,9 +59,10 @@ httpd = HTTPServer (server_address, HelloHandler)
 httpd.serve_forever()
 ```
 
-# OUTPUT:
 
-![Alt text](images/webserver1.png)
+# OUTPUT:
+![Alt text](webserver.png)
+
 
 # RESULT:
 
