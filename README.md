@@ -1,4 +1,4 @@
-# Developing a Simple Webserver
+![webserver png](https://github.com/abdullahsharmila/Web_server/assets/145742459/fb484dad-0e69-4a16-b073-f67562480bde)# Developing a Simple Webserver
 Name:Abdullah.R
 Ref no:23013613
 
@@ -63,7 +63,8 @@ httpd.serve_forever()
 
 
 # OUTPUT:
-![Alt text](webserver.png)
+
+![webserver png](https://github.com/abdullahsharmila/Web_server/assets/145742459/93d63fd5-f83c-4305-840c-a064b03a6a09)
 
 
 # RESULT:
